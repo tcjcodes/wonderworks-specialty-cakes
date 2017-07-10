@@ -1,7 +1,7 @@
 <!--The whole content below can be removed with the new code.-->
 <app-navigation-bar></app-navigation-bar>
 
-<section class="hero is-large is-primary">
+<section class="hero is-large is-primary ww-banner" id="home">
     <div class="hero-body">
         <div class="container">
             <h1 class="title is-1">
@@ -14,47 +14,109 @@
     </div>
 </section>
 
-<section class="section">
+<section class="section is-medium" id="about">
     <div class="container has-text-centered">
-        <p class="title">About</p>
+        <p class="title is-1">About</p>
         <hr>
-        <p class="subtitle">Tootsie roll gummies tiramisu icing caramels jujubes biscuit ice cream. Cake pastry oat cake cotton candy
+        <p class="subtitle">Tootsie roll gummies tiramisu icing caramels jujubes biscuit ice cream. Cake pastry oat cake
+            cotton candy
             muffin muffin marzipan fruitcake. Chocolate jelly beans danish. Bonbon cupcake icing tiramisu jelly-o
             macaroon pie pie cookie.</p>
-        <p class="subtitle">Danish cookie tart dessert topping muffin sweet roll gummies. Halvah gummies topping carrot cake pudding
+        <p class="subtitle">Danish cookie tart dessert topping muffin sweet roll gummies. Halvah gummies topping carrot
+            cake pudding
             wafer chocolate. Dragée caramels powder cake halvah tart.</p>
     </div>
 </section>
 
-<section class="section">
-    <div class="container">
-        <p class="title">Gallery</p>
-        <hr>
+<section class="hero is-dark is-medium" id="gallery">
+    <div class="hero-body">
+        <div class="container-fluid">
+            <p class="title is-1 has-text-centered">Gallery</p>
+            <hr>
+            <div class="columns is-multiline is-gapless">
+                <div class="column is-3">
+                    <img src="http://via.placeholder.com/750x450">
+                </div>
+                <div class="column is-3">
+                    <img src="http://via.placeholder.com/750x450">
+                </div>
+                <div class="column is-3">
+                    <img src="http://via.placeholder.com/750x450">
+                </div>
+                <div class="column is-3">
+                    <img src="http://via.placeholder.com/750x450">
+                </div>
+                <div class="column is-3">
+                    <img src="http://via.placeholder.com/750x450">
+                </div>
+                <div class="column is-3">
+                    <img src="http://via.placeholder.com/750x450">
+                </div>
+                <div class="column is-3">
+                    <img src="http://via.placeholder.com/750x450">
+                </div>
+                <div class="column is-3">
+                    <img src="http://via.placeholder.com/750x450">
+                </div>
+                <div class="column is-3">
+                    <img src="http://via.placeholder.com/750x450">
+                </div>
+                <div class="column is-3">
+                    <img src="http://via.placeholder.com/750x450">
+                </div>
+            </div>
+            <p class="has-text-centered subtitle">
+                <a href="#">More...</a>
+            </p>
+        </div>
     </div>
 </section>
-<section class="section">
+
+<section class="section" id="contact">
     <div class="container">
-        <p class="title">Contact Us</p>
+        <p class="title">Get In Touch</p>
         <hr>
+        <div class="columns">
+            <div class="column is-one-third">
+                <p class="subtitle">Contact Info</p>
+                <p>
+                    <a href="mailto:email@email.com"><span class="fa fa-envelope-o"></span></a> lorem@ipsumn.com
+                </p>
+                <p>
+                    <a href="#"><span class="fa fa-thumbs-o-up"></span></a> Like us on Facebook
+                    <a href="#"><span class="fa fa-facebook"></span></a> Facebook Page<br>
+                </p>
+
+            </div>
+            <div class="column">
+                <p class="subtitle">Leave a Message</p>
+                <div class="field is-grouped ">
+                    <p class="control is-expanded">
+                        <input type="text" class="input " placeholder="First Name" required>
+                    </p>
+                    <p class="control is-expanded">
+                        <input type="text" class="input" placeholder="Last Name">
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control">
+                        <input type="email" class="input" placeholder="E-mail">
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control">
+                        <textarea class="textarea" placeholder="Your message"></textarea>
+                    </p>
+                </div>
+                <button class="button is-primary">Submit</button>
+            </div>
+        </div>
     </div>
 </section>
-<!--<div style="text-align:center">
-    <h1>
-        Welcome to {{title}}!!
-    </h1>
-    <img width="300"
-         src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo="/>
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-    <li>
-        <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-    </li>
-    <li>
-        <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-    </li>
-    <li>
-        <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
-    </li>
-</ul>-->
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="content has-text-centered">Copyright 2017 - Wonderworks Specialty Cakes.</div>
+    </div>
+</footer>
 
