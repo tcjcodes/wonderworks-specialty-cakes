@@ -1,6 +1,14 @@
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+
 $navigation-bar-height: 52px;
 
 .ww-banner {
   margin-top: $navigation-bar-height;
-
+}
+.ww-contact__item {
+  padding-bottom: 1em;
+}
+.ww-contact__icon {
+  width: 1.3em;
+  padding-right: 0.25em;
 }
