@@ -3,16 +3,27 @@
 $navigation-bar-height: 52px;
 
 .ww-banner {
-  $background-url: "../assets/images/baking1.jpg";
-
+  $background-url: "../assets/images/cake1.jpg";
   margin-top: $navigation-bar-height;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url($background-url) no-repeat no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($background-url) no-repeat no-repeat top center fixed;
   background-size: cover;
 }
+.ww-banner__title {
+  font-size: 4em;
+}
+
 .ww-contact__item {
   padding-bottom: 1em;
 }
+
 .ww-contact__icon {
   width: 1.3em;
   padding-right: 0.25em;
+}
+.ww-gallery {
+
+}
+
+.ww-gallery__photos {
+  margin-top: 1.25em;
 }

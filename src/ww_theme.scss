@@ -5,6 +5,14 @@
 @import "ww_theme_variables";
 
 .ww-theme__title-separator {
+// 2. Set your own initial variables
+// Update blue
+$blue: #72d0eb;
+  // Add pink and its invert
+$pink: #d90033;
+$pink-invert: #fff;
+  // Add a serif family
+$family-serif: "Palatino", "Merriweather", "Georgia", serif;
 
   display: block;
   width: 3em;
@@ -14,12 +22,8 @@
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 
-  &--dark {
-    border-bottom-color: $primary-invert;
-  }
-  &--centered {
-    margin-right: auto;
-    margin-left: auto;
+  &__abbr {
+    cursor: help;
   }
 }
 
