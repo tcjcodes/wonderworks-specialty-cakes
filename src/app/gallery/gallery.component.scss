@@ -1,0 +1,41 @@
+@import "../../ww_theme_variables";
+
+.ww-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s ease;
+  background-color: $primary;
+
+  &__box {
+    position: relative;
+    //width: 50%;
+
+    &:hover {
+      .ww-overlay {
+        opacity: 0.8;
+      }
+    }
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  &__text {
+    opacity: 1;
+    color: $primary-invert;
+    font-size: 1.75em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+.flex {}

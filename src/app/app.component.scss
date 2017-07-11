@@ -3,7 +3,11 @@
 $navigation-bar-height: 52px;
 
 .ww-banner {
+  $background-url: "../assets/images/baking1.jpg";
+
   margin-top: $navigation-bar-height;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url($background-url) no-repeat no-repeat center center fixed;
+  background-size: cover;
 }
 .ww-contact__item {
   padding-bottom: 1em;

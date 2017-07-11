@@ -1,5 +1,6 @@
+@import "../../ww_theme_variables";
+
 .ww-brand-link {
-  font-size: 12px;
 }
 
 .ww-navbar {
@@ -9,4 +10,19 @@
   right: 0;
   background: #fff;
   z-index: 100;
+
+  a.ww-navbar-item--brand { // override
+    color: $primary;
+  }
+}
+
+.ww-navbar-item {
+  text-transform: lowercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  &--brand {
+    font-size: 1.25em;
+    font-weight: normal;
+  }
 }
