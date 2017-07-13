@@ -1,0 +1,29 @@
+/*
+  Customizing the Bulma theme
+ */
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "ww_variables";
+@import "ww_generic";
+
+.ww-theme__title-separator {
+  display: block;
+  width: 3em;
+  border-bottom: $primary solid 3px;
+  text-align: center;
+  padding: 0;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+
+  &__abbr {
+    cursor: help;
+  }
+  &--light {
+    border-bottom-color: $grey-light;
+  }
+  &--centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@import "../../node_modules/bulma/bulma";

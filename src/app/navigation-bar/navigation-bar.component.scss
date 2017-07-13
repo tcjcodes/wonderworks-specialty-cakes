@@ -1,4 +1,4 @@
-@import "../../ww_theme_variables";
+@import "../../theme_overrides/ww_variables";
 
 .ww-brand-link {
 }
@@ -23,6 +23,5 @@
 
   &--brand {
     font-size: 1.25em;
-    font-weight: normal;
   }
 }

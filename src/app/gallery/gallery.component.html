@@ -3,9 +3,14 @@
     <div class="container-fluid">
       <p class="title is-1 has-text-centered">Gallery</p>
       <span class="ww-theme__title-separator ww-theme__title-separator--centered"></span>
-      <div class="photo-container">
-        <div class="img-container" *ngFor="let photo of images">
-          <a href="#"><img src="../../assets/images/gallery/{{photo}}" alt="" class="photo-img ww-square-image"></a>
+      <div class="photo-container ">
+        <div class="img-container ww-overlay__box" *ngFor="let photo of images">
+          <a href="#"><img src="../../assets/images/gallery/{{photo}}" alt=""
+                           class="photo-img ww-rounded-img"></a>
+
+          <div class="ww-overlay ww-rounded-img">
+            <span class="ww-overlay__text">Image Caption</span>
+          </div>
         </div>
       </div>
       <!--<div class="flex ww-gallery-images__container">

@@ -1,4 +1,4 @@
-
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 // 2. Set your own initial variables
@@ -19,3 +19,4 @@ $primary-invert: #F4F1DE;
 
 // Use the new serif family
 $family-primary: $family-serif;
+$ww-family-secondary: $family-sans-serif;

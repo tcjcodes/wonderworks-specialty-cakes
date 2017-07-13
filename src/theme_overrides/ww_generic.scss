@@ -1,0 +1,21 @@
+@import "ww_variables.scss";
+
+body,
+p,
+.button,
+.input,
+.select,
+.textarea {
+  font-family: $ww-family-secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title, .subtitle {
+  font-family: $family-primary;
+}
+
