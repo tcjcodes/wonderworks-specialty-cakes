@@ -1,131 +1,145 @@
-<section class="hero is-dark is-bold is-medium ww-gallery" id="gallery">
-  <div class="hero-body">
-    <div class="container-fluid">
-      <p class="title is-1 has-text-centered">Gallery</p>
-      <span class="ww-theme__title-separator ww-theme__title-separator--centered"></span>
-      <div class="photo-container ">
-        <div class="img-container ww-overlay__box" *ngFor="let photo of images">
-          <a href="#"><img src="../../assets/images/gallery/{{photo}}" alt=""
-                           class="photo-img ww-rounded-img"></a>
+<section class="hero is-dark ww-gallery" id="gallery">
+    <div class="hero-body">
+        <div class="container-fluid">
+            <h1 class="title is-1 has-text-centered">Gallery</h1>
+            <span class="ww-theme__title-separator ww-theme__title-separator--centered"></span>
 
-          <div class="ww-overlay ww-rounded-img">
-            <span class="ww-overlay__text">Image Caption</span>
-          </div>
-        </div>
-      </div>
-      <!--<div class="flex ww-gallery-images__container">
-        <div *ngFor="let image of images" class="flex-item ww-overlay__box">
-          <a href="#">
-            <figure class="image is-square">
-              <img src="../../assets/images/gallery/{{image}}" class="ww-overlay__image ww-square-image">
-            </figure>
-            <div class="ww-overlay">
-              <span class="ww-overlay__text">
-                Cake 1
-              </span>
+            <div class="photo-container ww-flex">
+                <!--<div class="columns is-multiline">
+                    <div class="column is-half-mobile is-one-third-tablet is-2-desktop img-container ww-overlay__box" *ngFor="let photo of images">
+                        <a href="#"><img src="../../assets/images/gallery/{{photo}}"
+                                         alt=""
+                                         class="photo-img ww-rounded-img"></a>
+
+                        <div class="ww-overlay ww-rounded-img">
+                            <span class="ww-overlay__text">Image Caption</span>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="ww-flex__item-image" *ngFor="let photo of images">
+                    <a href="#"><img src="../../assets/images/gallery/{{photo}}"
+                                     alt=""
+                                     class="photo-img ww-rounded-img"></a>
+
+                   <!-- <div class="ww-overlay ww-rounded-img">
+                        <span class="ww-overlay__text">Image Caption</span>
+                    </div>-->
+                </div>
             </div>
-          </a>
-        </div>
-      </div>-->
+
+            <!--<div class="flex ww-gallery-images__container">
+              <div *ngFor="let image of images" class="flex-item ww-overlay__box">
+                <a href="#">
+                  <figure class="image is-square">
+                    <img src="../../assets/images/gallery/{{image}}" class="ww-overlay__image ww-square-image">
+                  </figure>
+                  <div class="ww-overlay">
+                    <span class="ww-overlay__text">
+                      Cake 1
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>-->
 
 
-      <!--<div class="tile is-ancestor">
-        <div class="column is-2">
-          <div class="ww-overlay__box">
-            <a href="#">
-              <figure class="image is-square">
-                <img src="../../assets/images/gallery/cake1.jpg" class="ww-overlay__image">
-              </figure>
-              <div class="ww-overlay">
-              <span class="ww-overlay__text">
-                Cake 1
-              </span>
+            <!--<div class="tile is-ancestor">
+              <div class="column is-2">
+                <div class="ww-overlay__box">
+                  <a href="#">
+                    <figure class="image is-square">
+                      <img src="../../assets/images/gallery/cake1.jpg" class="ww-overlay__image">
+                    </figure>
+                    <div class="ww-overlay">
+                    <span class="ww-overlay__text">
+                      Cake 1
+                    </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="ww-overlay__box">
+                  <a href="#">
+                    <figure class="image is-square">
+                      <img src="../../assets/images/gallery/cake3.jpg" class="ww-overlay__image">
+                    </figure>
+                    <div class="ww-overlay">
+                    <span class="ww-overlay__text">
+                      Cake 1
+                    </span>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </a>
-          </div>
-          <div class="ww-overlay__box">
-            <a href="#">
-              <figure class="image is-square">
-                <img src="../../assets/images/gallery/cake3.jpg" class="ww-overlay__image">
-              </figure>
-              <div class="ww-overlay">
-              <span class="ww-overlay__text">
-                Cake 1
-              </span>
+              <div class="column is-2">
+                <div class="ww-overlay__box">
+                  <a href="#"><img src="../../assets/images/gallery/cake2.jpg" class="ww-overlay__image">
+                    <div class="ww-overlay">
+                    <span class="ww-overlay__text">
+                      Cake 1
+                    </span>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </a>
-          </div>
+              <div class="column is-2">
+                <div class="ww-overlay__box">
+                  <a href="#"><img src="../../assets/images/gallery/cake4.jpg" class="ww-overlay__image">
+                    <div class="ww-overlay">
+                    <span class="ww-overlay__text">
+                      Cake 1
+                    </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="column is-2">
+                <div class="ww-overlay__box">
+                  <a href="#"><img src="../../assets/images/gallery/cake3.jpg" class="ww-overlay__image">
+                    <div class="ww-overlay">
+                    <span class="ww-overlay__text">
+                      Cake 1
+                    </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="column is-2">
+                <div class="ww-overlay__box">
+                  <a href="#"><img src="../../assets/images/gallery/birthday2.jpg" class="ww-overlay__image">
+                    <div class="ww-overlay">
+                    <span class="ww-overlay__text">
+                      Cake 1
+                    </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="column is-2">
+                <div class="ww-overlay__box">
+                  <a href="#"><img src="../../assets/images/gallery/birthday3.jpg" class="ww-overlay__image">
+                    <div class="ww-overlay">
+                    <span class="ww-overlay__text">
+                      Cake 1
+                    </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="column is-2">
+                <div class="ww-overlay__box">
+                  <a href="#"><img src="../../assets/images/gallery/cake1.jpg" class="ww-overlay__image">
+                    <div class="ww-overlay">
+                    <span class="ww-overlay__text">
+                      Cake 1
+                    </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>-->
+            <p class="ww-gallery__more has-text-centered subtitle">
+                <button class="button is-link">More...</button>
+            </p>
         </div>
-        <div class="column is-2">
-          <div class="ww-overlay__box">
-            <a href="#"><img src="../../assets/images/gallery/cake2.jpg" class="ww-overlay__image">
-              <div class="ww-overlay">
-              <span class="ww-overlay__text">
-                Cake 1
-              </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="column is-2">
-          <div class="ww-overlay__box">
-            <a href="#"><img src="../../assets/images/gallery/cake4.jpg" class="ww-overlay__image">
-              <div class="ww-overlay">
-              <span class="ww-overlay__text">
-                Cake 1
-              </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="column is-2">
-          <div class="ww-overlay__box">
-            <a href="#"><img src="../../assets/images/gallery/cake3.jpg" class="ww-overlay__image">
-              <div class="ww-overlay">
-              <span class="ww-overlay__text">
-                Cake 1
-              </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="column is-2">
-          <div class="ww-overlay__box">
-            <a href="#"><img src="../../assets/images/gallery/birthday2.jpg" class="ww-overlay__image">
-              <div class="ww-overlay">
-              <span class="ww-overlay__text">
-                Cake 1
-              </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="column is-2">
-          <div class="ww-overlay__box">
-            <a href="#"><img src="../../assets/images/gallery/birthday3.jpg" class="ww-overlay__image">
-              <div class="ww-overlay">
-              <span class="ww-overlay__text">
-                Cake 1
-              </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="column is-2">
-          <div class="ww-overlay__box">
-            <a href="#"><img src="../../assets/images/gallery/cake1.jpg" class="ww-overlay__image">
-              <div class="ww-overlay">
-              <span class="ww-overlay__text">
-                Cake 1
-              </span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>-->
-      <p class="has-text-centered subtitle">
-        <a href="#">More...</a>
-      </p>
     </div>
-  </div>
 </section>

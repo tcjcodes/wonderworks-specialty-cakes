@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
-
+  public imageCols = [];
   public images = [
     'cake1.jpg',
     'cake2.jpg',
@@ -15,12 +15,14 @@ export class GalleryComponent implements OnInit {
     'cake5.jpg',
     'cake6.jpg',
     'cake7.jpg',
+    'cake8.jpg',
     'birthday1.jpg',
     'birthday2.jpg',
     'birthday3.jpg',
-    // 'christmas1.jpg',
   ];
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

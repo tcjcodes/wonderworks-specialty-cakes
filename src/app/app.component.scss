@@ -2,28 +2,32 @@
 
 $navigation-bar-height: 52px;
 
-.ww-banner {
-  $background-url: "../assets/images/cake1.jpg";
-  margin-top: $navigation-bar-height;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($background-url) no-repeat no-repeat top center fixed;
-  background-size: cover;
-}
-.ww-banner__title {
-  font-size: 4em;
-}
+.ww- {
+  &banner {
+    $background-url: "../assets/images/cake1.jpg";
+    margin-top: $navigation-bar-height;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($background-url) no-repeat no-repeat top center fixed;
+    background-size: cover;
+    &__title {
+      font-size: 4em;
+    }
+  }
 
-.ww-contact__item {
-  padding-bottom: 1em;
-}
+  &quote {
+    $background-url: "../assets/images/baking2.jpg";
+    background: linear-gradient(
+                    rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url($background-url) no-repeat no-repeat center center;
+    background-size: cover;
+  }
 
-.ww-contact__icon {
-  width: 1.3em;
-  padding-right: 0.25em;
-}
-.ww-gallery {
-
-}
-
-.ww-gallery__photos {
-  margin-top: 1.25em;
+  &contact {
+    &__item {
+      padding-bottom: 1em;
+    }
+    &__icon {
+      width: 1.3em;
+      padding-right: 0.25em;
+    }
+  }
 }

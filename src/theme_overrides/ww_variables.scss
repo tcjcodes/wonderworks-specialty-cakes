@@ -1,5 +1,6 @@
 @import "../../node_modules/bulma/sass/utilities/initial-variables";
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 // 2. Set your own initial variables
 // Update blue
@@ -9,7 +10,7 @@ $pink: #ffb3b3;
 $pink-invert: #fff;
 // Add a serif family
 $family-serif: "Playfair Display", "Merriweather", "Georgia", serif;
-
+$family-sans-serif: 'Roboto', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 // 3. Set the derived variables
 // Use the new pink as the primary color
 $primary: #E07A5F;

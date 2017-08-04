@@ -1,65 +1,25 @@
 @import "../../theme_overrides/ww_variables";
 
-.ww-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.4;
-  transition: .3s ease;
-  background-color: #000;
+.ww-gallery {
+  $background-url: "../../assets/images/baking3.jpg";
+  background: linear-gradient(rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)), url($background-url) no-repeat no-repeat bottom center fixed;
+  background-size: cover;
 
-  &__box {
-    position: relative;
+  &__photos {
+    margin-top: 1.25em;
+  }
+  &__more {
+    margin-top: 1.5em;
+  }
 
-    &:hover {
-      .ww-overlay {
-        opacity: 0;
-      }
-    }
+  .title {
+    margin-top: 1em;
   }
-  &__image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  &__text {
-    color: $primary-invert;
-    font-size: 1.75em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
-}
-
-.ww-gallery__more {
-  margin-top: 1.5em;
 }
 
 .ww-square-image {
-  object-fit: cover;
-  //width: 250px;
-  //height: 230px;
-}
-
-.flex {
-  display: flex;
-  flex-direction: column;
-  height: 240px * 3;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.flex-item {
-  //&.ww-overlay__box {
-  //  width: 20%;
-  //  margin: 15px;
-  //}
+  //object-fit: cover;
 }
 
 .ww-rounded-img {
@@ -67,37 +27,35 @@
 }
 
 .photo-container {
-  padding: .5vw;
-  font-size: 0;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  display: -webkit-box;
-  display: flex;
-
-  .img-container {
-    -webkit-box-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
-    width: 20vw;
-    margin: 15px;
-
-    .photo-img {
-      width: 100%;
-      height: 15vw;
-      object-fit: cover;
-    }
-  }
+  height: 90vh;
 }
 
-@media screen and (max-width: 400px) {
-  .photo-container .img-container {
-    margin: 0;
-  }
-  .photo-container {
-    padding: 0;
-  }
+.img-container {
+}
 
+.photo-img {
+}
+
+//@media screen and (max-width: 400px) {
+//  .photo-container .img-container {
+//    margin: 0;
+//  }
+//  .photo-container {
+//    padding: 0;
+//  }
+//
+//}
+
+.ww-flex {
+  display: flex;
+  flex-direction: column;
+  //justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  &__item-image {
+    max-width: 15vw;
+    margin: 15px;
+  }
 }
